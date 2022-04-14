@@ -6,7 +6,11 @@ fun main(){
     println( Sang.accountBalance)
     Sang.details()
     fruits("Banana")
-    var Jeruto=savingsAccount("PJ","12345",20000.00,4)
+    var Jeruto=savingsAccount("PJ","12345",20000.00,7)
+    Jeruto.withdrawn(5.0)
+
+
+
 
 
 }
@@ -28,8 +32,13 @@ fun main(){
 }
   open class savingsAccount(accountName: String,accountNumber: String,accountBalance: Double , var withdrawals:Int ):Currentaccount(accountName,accountNumber,accountBalance,) {
      override fun withdrawn(amount: Double) {
+         withdrawals=4
+         var z= amount-withdrawals
+         println(z)
       if(withdrawals<=4){
-     println()
+     println("withdraw $withdrawals")
+      }else{
+          println("excess by $z")
       }
      }
 
