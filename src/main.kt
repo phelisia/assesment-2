@@ -7,7 +7,9 @@ fun main(){
     Sang.details()
     fruits("Banana")
     var Jeruto=savingsAccount("PJ","12345",20000.00,7)
-    Jeruto.withdrawn(5.0)
+    Jeruto.withdrawn(200000.00)
+    Jeruto.deposit(500.00)
+    println(Jeruto.withdrawals)
 
 
 
@@ -36,10 +38,10 @@ fun main(){
          var z= amount-withdrawals
          println(z)
       if(withdrawals<=4){
-     println("withdraw $withdrawals")
-      }else{
-          println("excess by $z")
+     accountBalance-amount
       }
+         println(accountBalance)
+         withdrawals++
      }
 
 
