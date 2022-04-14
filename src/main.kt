@@ -29,7 +29,7 @@ fun main(){
   open class savingsAccount(accountName: String,accountNumber: String,accountBalance: Double , var withdrawals:Int ):Currentaccount(accountName,accountNumber,accountBalance,) {
      override fun withdrawn(amount: Double) {
       if(withdrawals<=4){
-
+     println()
       }
      }
 
@@ -55,9 +55,11 @@ data class Product(var name :String,var weight:String,var price:Int,var category
 //4.Write a function that given a string returns a string composed of only
 //the characters in even indices. For example given “banana” it will return
 fun fruits(fruit:String):String{
+    var f=""
     fruit.forEachIndexed { index, c ->
         if (index%2==0){
-            println(c)
+            f+=c
+            println(f)
 
         }
     }
